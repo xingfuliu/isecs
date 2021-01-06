@@ -1,0 +1,42 @@
+plugins {
+    id 'org.springframework.boot' version '2.4.0'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+    id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-snapshot'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenLocal()
+//        maven { url "http://maven-pub.ddns.net:8081/repository/maven-public/" }
+    maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
+    mavenCentral()
+    jcenter()
+    maven { url "http://repo.spring.io/snapshot" }
+    maven { url "http://repo.spring.io/milestone" }
+    maven { url 'http://maven.springframework.org/release' }
+    maven { url 'http://maven.springframework.org/milestone' }
+}
+
+dependencies {
+    implementation fileTree('lib')
+    implementation('commons-io:commons-io:2.6')
+    implementation('commons-beanutils:commons-beanutils:1.9.4')
+    implementation(group: 'commons-net', name: 'commons-net', version: '3.6')
+    implementation('org.springframework.boot:spring-boot-starter')
+    implementation(group: 'com.alibaba', name: 'fastjson', version: '1.1.15')
+    implementation(group: 'joda-time', name: 'joda-time', version: '2.10')
+    implementation('org.springframework.boot:spring-boot-starter')
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation('org.springframework.boot:spring-boot-starter-aop')
+    implementation group: 'org.jdom', name: 'jdom2', version: '2.0.6'
+    implementation(group: 'com.alibaba', name: 'fastjson', version: '1.1.15')
+    implementation group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.2.19'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+    useJUnitPlatform()
+}
