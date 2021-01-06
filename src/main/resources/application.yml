@@ -1,0 +1,9 @@
+server:
+  port: 38098
+  servlet:
+    context-path: /
+  tomcat:
+    remote-ip-header: x-forwarded-for
+spring:
+  profiles:
+    include: group, message
