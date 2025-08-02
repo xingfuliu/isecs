@@ -3,6 +3,7 @@ messages:
     - title: Equipment Status
       description: 机台状态
       type: SEQUENCE_GROUP
+      stream: 1
       items:
         - type: MESSAGE
           itemType: messageS1F1
@@ -127,6 +128,7 @@ messages:
     - title: Equipment Control And Diagnostics
       description: 机台控制及诊断
       type: SEQUENCE_GROUP
+      stream: 2
       items:
         - type: MESSAGE
           itemType: messageS2F13
@@ -371,6 +373,7 @@ messages:
     - title: Material Status
       description: 材料状态
       type: SEQUENCE_GROUP
+      stream: 3
       items:
         - type: MESSAGE
           itemType: messageS3F1
@@ -535,6 +538,7 @@ messages:
     - title: Material Control
       description: 材料控制
       type: SEQUENCE_GROUP
+      stream: 4
       items:
         - type: MESSAGE
           itemType: messageS4F1
@@ -559,6 +563,7 @@ messages:
     - title: Exception Handling
       description: 例外处理
       type: SEQUENCE_GROUP
+      stream: 5
       items:
         - type: MESSAGE
           itemType: messageS5F1
@@ -643,6 +648,7 @@ messages:
     - title: Data Collection
       description: 数据收集
       type: SEQUENCE_GROUP
+      stream: 6
       items:
         - type: MESSAGE
           itemType: messageS6F1
@@ -847,6 +853,7 @@ messages:
     - title: Process Program Management, Recipe
       description: 机台处理程序管理
       type: SEQUENCE_GROUP
+      stream: 7
       items:
         - type: MESSAGE
           itemType: messageS7F1
@@ -860,14 +867,14 @@ messages:
           description: Process Program Load Inquire before Request the Recipe File
         - type: MESSAGE
           itemType: messageS7F2
-          label: S7F2
+          label: S7F1
           stream: 7
-          function: 2
+          function: 1
           icon: el-icon-bell
           withReply: N
           span: 24
           display: true
-          description: Process Program Load Inquire Grant
+          description: Process Program Load Inquire before Request the Recipe File
         - type: MESSAGE
           itemType: messageS7F3
           label: S7F3
@@ -1031,10 +1038,12 @@ messages:
     - title: Control Program Transfer
       description: 控制程序传输
       type: SEQUENCE_GROUP
+      stream: 8
       items:
     - title: System Errors
       description: 系统错误
       type: SEQUENCE_GROUP
+      stream: 9
       items:
         - type: MESSAGE
           itemType: messageS9F1
@@ -1109,6 +1118,7 @@ messages:
     - title: Terminal Services
       description: 终端服务
       type: SEQUENCE_GROUP
+      stream: 10
       items:
         - type: MESSAGE
           itemType: messageS10F1
@@ -1193,10 +1203,12 @@ messages:
     - title: Host File Services
       description: 主机档案服务
       type: SEQUENCE_GROUP
+      stream: 11
       items:
     - title: Wafer Mapping
       description: 晶圆定位
       type: SEQUENCE_GROUP
+      stream: 12
       items:
         - type: MESSAGE
           itemType: messageS12F1
@@ -1378,3 +1390,29 @@ messages:
           span: 24
           display: true
           description: Map Chip Picked Notify
+    - title: Wafer Mapping
+      description: 料条定位
+      type: SEQUENCE_GROUP
+      stream: 14
+      items:
+        - type: MESSAGE
+          itemType: messageS14F1
+          label: S14F1
+          stream: 14
+          function: 1
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Strip GetAttribute Request
+        - type: MESSAGE
+          itemType: messageS14F2
+          label: S14F2
+          stream: 14
+          function: 2
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Strip Get Attribute Data
+

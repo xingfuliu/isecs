@@ -6,4 +6,4 @@ server:
     remote-ip-header: x-forwarded-for
 spring:
   profiles:
-    include: group, message
+    include: group, message, secs-data-item

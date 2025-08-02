@@ -1,1 +1,1 @@
-java -noverify -jar isecs-0.0.1-snapshot.jar
+java -noverify -jar isecs-1.0.0.0.jar

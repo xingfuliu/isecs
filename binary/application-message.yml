@@ -1,0 +1,1418 @@
+messages:
+  items:
+    - title: Equipment Status
+      description: 机台状态
+      type: SEQUENCE_GROUP
+      stream: 1
+      items:
+        - type: MESSAGE
+          itemType: messageS1F1
+          label: S1F1
+          stream: 1
+          function: 1
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Are You There Request
+        - type: MESSAGE
+          itemType: messageS1F2
+          label: S1F2
+          stream: 1
+          function: 2
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Online Data
+        - type: MESSAGE
+          itemType: messageS1F3
+          label: S1F3
+          stream: 1
+          function: 3
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Selected Equipment Status Request
+        - type: MESSAGE
+          itemType: messageS1F4
+          label: S1F4
+          stream: 1
+          function: 4
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Selected Equipment Status Data
+        - type: MESSAGE
+          itemType: messageS1F11
+          label: S1F11
+          stream: 1
+          function: 11
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Status Variable Namelist Request
+        - type: MESSAGE
+          itemType: messageS1F12
+          label: S1F12
+          stream: 1
+          function: 12
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Status Variable Namelist Reply
+        - type: MESSAGE
+          itemType: messageS1F13
+          label: S1F13
+          stream: 1
+          function: 13
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Establish Communications Request
+        - type: MESSAGE
+          itemType: messageS1F14
+          label: S1F14
+          stream: 1
+          function: 14
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Establish Communications Request Acknowledge
+        - type: MESSAGE
+          itemType: messageS1F15
+          label: S1F15
+          stream: 1
+          function: 15
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Request OFF-LINE
+        - type: MESSAGE
+          itemType: messageS1F16
+          label: S1F16
+          stream: 1
+          function: 16
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: OFF-LINE Acknowledge
+        - type: MESSAGE
+          itemType: messageS1F17
+          label: S1F17
+          stream: 1
+          function: 17
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Request ON-LINE
+        - type: MESSAGE
+          itemType: messageS1F18
+          label: S1F18
+          stream: 1
+          function: 18
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: ON-LINE Acknowledge
+    - title: Equipment Control And Diagnostics
+      description: 机台控制及诊断
+      type: SEQUENCE_GROUP
+      stream: 2
+      items:
+        - type: MESSAGE
+          itemType: messageS2F13
+          label: S2F13
+          stream: 2
+          function: 13
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Equipment Constant Request
+        - type: MESSAGE
+          itemType: messageS2F14
+          label: S2F14
+          stream: 2
+          function: 14
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Equipment Constant Data
+        - type: MESSAGE
+          itemType: messageS2F15
+          label: S2F15
+          stream: 2
+          function: 15
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: New Equipment Constant Send
+        - type: MESSAGE
+          itemType: messageS2F16
+          label: S2F16
+          stream: 2
+          function: 16
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: New Equipment Constant Acknowledge
+        - type: MESSAGE
+          itemType: messageS2F17
+          label: S2F17
+          stream: 2
+          function: 17
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Date and Time Request
+        - type: MESSAGE
+          itemType: messageS2F18
+          label: S2F18
+          stream: 2
+          function: 18
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Date and Time Data
+        - type: MESSAGE
+          itemType: messageS2F23
+          label: S2F23
+          stream: 2
+          function: 23
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Trace Initialize Send
+        - type: MESSAGE
+          itemType: messageS2F24
+          label: S2F24
+          stream: 2
+          function: 24
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Trace Initialize Acknowledge
+        - type: MESSAGE
+          itemType: messageS2F25
+          label: S2F25
+          stream: 2
+          function: 25
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Loopback Diagnostic Request for the Equipment (Communication)
+        - type: MESSAGE
+          itemType: messageS2F26
+          label: S2F26
+          stream: 2
+          function: 26
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Loopback Diagnostic Data (Response for Diagnostic Request)
+        - type: MESSAGE
+          itemType: messageS2F29
+          label: S2F29
+          stream: 2
+          function: 29
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Equipment Constant Namelist Request
+        - type: MESSAGE
+          itemType: messageS2F30
+          label: S2F30
+          stream: 2
+          function: 30
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Equipment Constant Namelist
+        - type: MESSAGE
+          itemType: messageS2F31
+          label: S2F31
+          stream: 2
+          function: 31
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Date and Time Set Request
+        - type: MESSAGE
+          itemType: messageS2F32
+          label: S2F32
+          stream: 2
+          function: 32
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Date and Time Set Acknowledge
+        - type: MESSAGE
+          itemType: messageS2F33
+          label: S2F33
+          stream: 2
+          function: 33
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Define Report
+        - type: MESSAGE
+          itemType: messageS2F34
+          label: S2F34
+          stream: 2
+          function: 34
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Define Report Ackowledge
+        - type: MESSAGE
+          itemType: messageS2F35
+          label: S2F35
+          stream: 2
+          function: 35
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Link Event Report
+        - type: MESSAGE
+          itemType: messageS2F36
+          label: S2F36
+          stream: 2
+          function: 36
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Link Event Report Acknowledge
+        - type: MESSAGE
+          itemType: messageS2F37
+          label: S2F37
+          stream: 2
+          function: 37
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Enable/Disable Event Report
+        - type: MESSAGE
+          itemType: messageS2F38
+          label: S2F38
+          stream: 2
+          function: 38
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Enable/Disable Event Report Acknowledge
+        - type: MESSAGE
+          itemType: messageS2F41
+          label: S2F41
+          stream: 2
+          function: 41
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Host Command Send
+        - type: MESSAGE
+          itemType: messageS2F42
+          label: S2F42
+          stream: 2
+          function: 42
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Host Command Acknowledge
+        - type: MESSAGE
+          itemType: messageS2F43
+          label: S2F43
+          stream: 2
+          function: 43
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Reset Spooling
+        - type: MESSAGE
+          itemType: messageS2F44
+          label: S2F44
+          stream: 2
+          function: 44
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Reset Spooling Acknowledge
+    - title: Material Status
+      description: 材料状态
+      type: SEQUENCE_GROUP
+      stream: 3
+      items:
+        - type: MESSAGE
+          itemType: messageS3F1
+          label: S3F1
+          stream: 3
+          function: 1
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Material Status Request for each Chambers or Component
+        - type: MESSAGE
+          itemType: messageS3F2
+          label: S3F2
+          stream: 3
+          function: 2
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Material Status Data
+        - type: MESSAGE
+          itemType: messageS3F3
+          label: S3F3
+          stream: 3
+          function: 3
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Time to Completion Request for each LOT
+        - type: MESSAGE
+          itemType: messageS3F4
+          label: S3F4
+          stream: 3
+          function: 4
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Time to Completion Data
+        - type: MESSAGE
+          itemType: messageS3F17
+          label: S3F17
+          stream: 3
+          function: 17
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Request an action to be performed for a specified carrier
+        - type: MESSAGE
+          itemType: messageS3F18
+          label: S3F18
+          stream: 3
+          function: 18
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Carrier Action Acknowledge
+        - type: MESSAGE
+          itemType: messageS3F23
+          label: S3F23
+          stream: 3
+          function: 23
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Request an action be performed for a port group
+        - type: MESSAGE
+          itemType: messageS3F24
+          label: S3F24
+          stream: 3
+          function: 24
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Port Group Action Acknowledge
+        - type: MESSAGE
+          itemType: messageS3F25
+          label: S3F25
+          stream: 3
+          function: 25
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Request an action be performed for a port
+        - type: MESSAGE
+          itemType: messageS3F26
+          label: S3F26
+          stream: 3
+          function: 26
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Port Action Acknowledge
+        - type: MESSAGE
+          itemType: messageS3F27
+          label: S3F27
+          stream: 3
+          function: 27
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Request to change the AMHS mode for a port
+        - type: MESSAGE
+          itemType: messageS3F28
+          label: S3F28
+          stream: 3
+          function: 28
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Port AMHS Acknowledge
+        - type: MESSAGE
+          itemType: messageS3F29
+          label: S3F29
+          stream: 3
+          function: 29
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Request Read Carrier Tag
+        - type: MESSAGE
+          itemType: messageS3F30
+          label: S3F30
+          stream: 3
+          function: 30
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Read Carrier Tag Acknowledge
+        - type: MESSAGE
+          itemType: messageS3F31
+          label: S3F31
+          stream: 3
+          function: 31
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Request Write Carrier Tag
+        - type: MESSAGE
+          itemType: messageS3F32
+          label: S3F32
+          stream: 3
+          function: 32
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Write Carrier Tag Acknowledge
+    - title: Material Control
+      description: 材料控制
+      type: SEQUENCE_GROUP
+      stream: 4
+      items:
+        - type: MESSAGE
+          itemType: messageS4F1
+          label: S4F1
+          stream: 4
+          function: 1
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: \
+        - type: MESSAGE
+          itemType: messageS4F2
+          label: S4F2
+          stream: 4
+          function: 2
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: \
+    - title: Exception Handling
+      description: 例外处理
+      type: SEQUENCE_GROUP
+      stream: 5
+      items:
+        - type: MESSAGE
+          itemType: messageS5F1
+          label: S5F1
+          stream: 5
+          function: 1
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Alarm Report Send
+        - type: MESSAGE
+          itemType: messageS5F2
+          label: S5F2
+          stream: 5
+          function: 2
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Alarm Report Acknowledge
+        - type: MESSAGE
+          itemType: messageS5F3
+          label: S5F3
+          stream: 5
+          function: 3
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Alarm Enable/Disable Set
+        - type: MESSAGE
+          itemType: messageS5F4
+          label: S5F4
+          stream: 5
+          function: 4
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Enable/Disable Alarm Acknowledge
+        - type: MESSAGE
+          itemType: messageS5F5
+          label: S5F5
+          stream: 5
+          function: 5
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Request Alarms that is Enabled/Disabled
+        - type: MESSAGE
+          itemType: messageS5F6
+          label: S5F6
+          stream: 5
+          function: 6
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: List Alarm Data
+        - type: MESSAGE
+          itemType: messageS5F7
+          label: S5F7
+          stream: 5
+          function: 7
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: List Enabled Alarm Request
+        - type: MESSAGE
+          itemType: messageS5F8
+          label: S5F8
+          stream: 5
+          function: 8
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: List Enabled Alarm Data
+    - title: Data Collection
+      description: 数据收集
+      type: SEQUENCE_GROUP
+      stream: 6
+      items:
+        - type: MESSAGE
+          itemType: messageS6F1
+          label: S6F1
+          stream: 6
+          function: 1
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Trace Data Send
+        - type: MESSAGE
+          itemType: messageS6F2
+          label: S6F2
+          stream: 6
+          function: 2
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Trace Data Acknowledge Trace
+        - type: MESSAGE
+          itemType: messageS6F3
+          label: S6F3
+          stream: 6
+          function: 3
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Discrete Variable Data Send
+        - type: MESSAGE
+          itemType: messageS6F4
+          label: S6F4
+          stream: 6
+          function: 4
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Discrete Variable Data Acknowledge
+        - type: MESSAGE
+          itemType: messageS6F9
+          label: S6F9
+          stream: 6
+          function: 9
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Formatted Variable Data Send
+        - type: MESSAGE
+          itemType: messageS6F10
+          label: S6F10
+          stream: 6
+          function: 10
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Formatted Variable Acknowledge
+        - type: MESSAGE
+          itemType: messageS6F11
+          label: S6F11
+          stream: 6
+          function: 11
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Event Report Send
+        - type: MESSAGE
+          itemType: messageS6F12
+          label: S6F12
+          stream: 6
+          function: 12
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Event Report Acknowledge
+        - type: MESSAGE
+          itemType: messageS6F13
+          label: S6F13
+          stream: 6
+          function: 13
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Annotated Event Report Send
+        - type: MESSAGE
+          itemType: messageS6F14
+          label: S6F14
+          stream: 6
+          function: 14
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Annotated Event Report Acknowledge
+        - type: MESSAGE
+          itemType: messageS6F15
+          label: S6F15
+          stream: 6
+          function: 15
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Event Report Request
+        - type: MESSAGE
+          itemType: messageS6F16
+          label: S6F16
+          stream: 6
+          function: 16
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Event report Data
+        - type: MESSAGE
+          itemType: messageS6F17
+          label: S6F17
+          stream: 6
+          function: 17
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Annotated Event Report Request
+        - type: MESSAGE
+          itemType: messageS6F18
+          label: S6F18
+          stream: 6
+          function: 18
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Annotated Individual Report Data
+        - type: MESSAGE
+          itemType: messageS6F19
+          label: S6F19
+          stream: 6
+          function: 19
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Individual Report Request
+        - type: MESSAGE
+          itemType: messageS6F20
+          label: S6F20
+          stream: 6
+          function: 20
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Individual Report Data
+        - type: MESSAGE
+          itemType: messageS6F21
+          label: S6F21
+          stream: 6
+          function: 21
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Annotated Individual Report Request
+        - type: MESSAGE
+          itemType: messageS6F22
+          label: S6F22
+          stream: 6
+          function: 22
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Annotated Individual Report Data
+        - type: MESSAGE
+          itemType: messageS6F23
+          label: S6F23
+          stream: 6
+          function: 23
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Request Spooled Data
+        - type: MESSAGE
+          itemType: messageS6F24
+          label: S6F24
+          stream: 6
+          function: 24
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Request Spooled Data Acknowledge Send
+    - title: Process Program Management, Recipe
+      description: 机台处理程序管理
+      type: SEQUENCE_GROUP
+      stream: 7
+      items:
+        - type: MESSAGE
+          itemType: messageS7F1
+          label: S7F1
+          stream: 7
+          function: 1
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Process Program Load Inquire before Request the Recipe File
+        - type: MESSAGE
+          itemType: messageS7F2
+          label: S7F1
+          stream: 7
+          function: 1
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Process Program Load Inquire before Request the Recipe File
+        - type: MESSAGE
+          itemType: messageS7F3
+          label: S7F3
+          stream: 7
+          function: 3
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Process Program Send
+        - type: MESSAGE
+          itemType: messageS7F4
+          label: S7F4
+          stream: 7
+          function: 4
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Process Program Send Acknowledge
+        - type: MESSAGE
+          itemType: messageS7F5
+          label: S7F5
+          stream: 7
+          function: 5
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Process Program Request
+        - type: MESSAGE
+          itemType: messageS7F6
+          label: S7F6
+          stream: 7
+          function: 6
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Process Program Data
+        - type: MESSAGE
+          itemType: messageS7F17
+          label: S7F17
+          stream: 7
+          function: 17
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Request the equipment to delete process programs from equipment
+        - type: MESSAGE
+          itemType: messageS7F18
+          label: S7F18
+          stream: 7
+          function: 18
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Delete Process Program Acknowledge
+        - type: MESSAGE
+          itemType: messageS7F19
+          label: S7F19
+          stream: 7
+          function: 19
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Current PP List Request
+        - type: MESSAGE
+          itemType: messageS7F20
+          label: S7F20
+          stream: 7
+          function: 20
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Current PP List Data
+        - type: MESSAGE
+          itemType: messageS7F23
+          label: S7F23
+          stream: 7
+          function: 23
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Formatted Process Program Send
+        - type: MESSAGE
+          itemType: messageS7F24
+          label: S7F24
+          stream: 7
+          function: 24
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Formatted Process Program Acknowledge
+        - type: MESSAGE
+          itemType: messageS7F25
+          label: S7F25
+          stream: 7
+          function: 25
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Request a particular Process Send
+        - type: MESSAGE
+          itemType: messageS7F26
+          label: S7F26
+          stream: 7
+          function: 26
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Formatted Process Program Data
+        - type: MESSAGE
+          itemType: messageS7F27
+          label: S7F27
+          stream: 7
+          function: 27
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Process Program Verification Send
+        - type: MESSAGE
+          itemType: messageS7F28
+          label: S7F28
+          stream: 7
+          function: 28
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Acknowledge reception of Process Program Verification Send
+        - type: MESSAGE
+          itemType: messageS7F29
+          label: S7F29
+          stream: 7
+          function: 29
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Process Program Verification Inquire
+        - type: MESSAGE
+          itemType: messageS7F30
+          label: S7F30
+          stream: 7
+          function: 30
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: When exit Item for adjustment, whether receive or not about message that is S7F27
+    - title: Control Program Transfer
+      description: 控制程序传输
+      type: SEQUENCE_GROUP
+      stream: 8
+      items:
+    - title: System Errors
+      description: 系统错误
+      type: SEQUENCE_GROUP
+      stream: 9
+      items:
+        - type: MESSAGE
+          itemType: messageS9F1
+          label: S9F1
+          stream: 9
+          function: 1
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Unrecognized Device ID
+        - type: MESSAGE
+          itemType: messageS9F3
+          label: S9F3
+          stream: 9
+          function: 3
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Unrecognized Stream Type
+        - type: MESSAGE
+          itemType: messageS9F5
+          label: S9F5
+          stream: 9
+          function: 5
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Unrecognized Function Type
+        - type: MESSAGE
+          itemType: messageS9F7
+          label: S9F7
+          stream: 9
+          function: 7
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Illegal Data
+        - type: MESSAGE
+          itemType: messageS9F9
+          label: S9F9
+          stream: 9
+          function: 9
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Transaction Timer Timeout
+        - type: MESSAGE
+          itemType: messageS9F11
+          label: S9F11
+          stream: 9
+          function: 11
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Data Too Long
+        - type: MESSAGE
+          itemType: messageS9F13
+          label: S9F13
+          stream: 9
+          function: 13
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Conversation Timeout
+    - title: Terminal Services
+      description: 终端服务
+      type: SEQUENCE_GROUP
+      stream: 10
+      items:
+        - type: MESSAGE
+          itemType: messageS10F1
+          label: S10F1
+          stream: 10
+          function: 1
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Terminal Request
+        - type: MESSAGE
+          itemType: messageS10F2
+          label: S10F2
+          stream: 10
+          function: 2
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Terminal Request Acknowledge
+        - type: MESSAGE
+          itemType: messageS10F3
+          label: S10F3
+          stream: 10
+          function: 3
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Send Single Block Message
+        - type: MESSAGE
+          itemType: messageS10F4
+          label: S10F4
+          stream: 10
+          function: 4
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Single Acknowledge
+        - type: MESSAGE
+          itemType: messageS10F5
+          label: S10F5
+          stream: 10
+          function: 5
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Send Multi Block Message
+        - type: MESSAGE
+          itemType: messageS10F6
+          label: S10F6
+          stream: 10
+          function: 6
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Multi Acknowledge
+        - type: MESSAGE
+          itemType: messageS10F9
+          label: S10F9
+          stream: 10
+          function: 9
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Send Broadcast Message
+        - type: MESSAGE
+          itemType: messageS10F10
+          label: S10F10
+          stream: 10
+          function: 10
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Broadcast Acknowledge
+    - title: Host File Services
+      description: 主机档案服务
+      type: SEQUENCE_GROUP
+      stream: 11
+      items:
+    - title: Wafer Mapping
+      description: 晶圆定位
+      type: SEQUENCE_GROUP
+      stream: 12
+      items:
+        - type: MESSAGE
+          itemType: messageS12F1
+          label: S12F1
+          stream: 12
+          function: 1
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Map Set-up Data Send
+        - type: MESSAGE
+          itemType: messageS12F2
+          label: S12F2
+          stream: 12
+          function: 2
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Map Set-up Data Acknowledge
+        - type: MESSAGE
+          itemType: messageS12F3
+          label: S12F3
+          stream: 12
+          function: 3
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Map Set-up Data Request
+        - type: MESSAGE
+          itemType: messageS12F4
+          label: S12F4
+          stream: 12
+          function: 4
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Map Set-up Data
+        - type: MESSAGE
+          itemType: messageS12F5
+          label: S12F5
+          stream: 12
+          function: 5
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Map Transmit Inquire
+        - type: MESSAGE
+          itemType: messageS12F6
+          label: S12F6
+          stream: 12
+          function: 6
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Map Transmit Grant
+        - type: MESSAGE
+          itemType: messageS12F9
+          label: S12F9
+          stream: 12
+          function: 9
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Map Data Send Type 2
+        - type: MESSAGE
+          itemType: messageS12F10
+          label: S12F10
+          stream: 12
+          function: 10
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Map Data Acknowledge Type 2
+        - type: MESSAGE
+          itemType: messageS12F15
+          label: S12F15
+          stream: 12
+          function: 15
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Map Data Request Type 2
+        - type: MESSAGE
+          itemType: messageS12F16
+          label: S12F16
+          stream: 12
+          function: 16
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Map Data Type 2
+        - type: MESSAGE
+          itemType: messageS12F19
+          label: S12F19
+          stream: 12
+          function: 19
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Map Error Report Send
+        - type: MESSAGE
+          itemType: messageS12F65
+          label: S12F65
+          stream: 12
+          function: 65
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Map Data Reload Send
+        - type: MESSAGE
+          itemType: messageS12F66
+          label: S12F66
+          stream: 12
+          function: 66
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Map Data Reload Acknowledge
+        - type: MESSAGE
+          itemType: messageS12F67
+          label: S12F67
+          stream: 12
+          function: 67
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Map Restart Request
+        - type: MESSAGE
+          itemType: messageS12F68
+          label: S12F68
+          stream: 12
+          function: 68
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Map Restart Acknowledge
+        - type: MESSAGE
+          itemType: messageS12F81
+          label: S12F81
+          stream: 12
+          function: 81
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Start/Stop Pick Logging Request
+        - type: MESSAGE
+          itemType: messageS12F82
+          label: S12F82
+          stream: 12
+          function: 82
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Start/Stop Pick Logging Acknowledge
+        - type: MESSAGE
+          itemType: messageS12F83
+          label: S12F83
+          stream: 12
+          function: 83
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Map Chip Picked Notify
+    - title: Wafer Mapping
+      description: 料条定位
+      type: SEQUENCE_GROUP
+      stream: 14
+      items:
+        - type: MESSAGE
+          itemType: messageS14F1
+          label: S14F1
+          stream: 14
+          function: 1
+          icon: el-icon-bell
+          withReply: Y
+          span: 24
+          display: true
+          description: Strip GetAttribute Request
+        - type: MESSAGE
+          itemType: messageS14F2
+          label: S14F2
+          stream: 14
+          function: 2
+          icon: el-icon-bell
+          withReply: N
+          span: 24
+          display: true
+          description: Strip Get Attribute Data
+

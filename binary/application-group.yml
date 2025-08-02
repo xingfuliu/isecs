@@ -1,0 +1,57 @@
+groups:
+  items:
+    - type: SEQUENCE_GROUP
+      title: GemIntialize
+      description: 联机初始化
+    - type: SEQUENCE_GROUP
+      title: ProgramManagementAndProcess
+      description: 程序管理和作业
+    - type: SEQUENCE_GROUP
+      title: ControlStatusChange
+      description: 控制状态变更
+    - type: SEQUENCE_GROUP
+      title: ProcessStateChange
+      description: 作业状态变更
+    - type: SEQUENCE_GROUP
+      title: LotStartAndEnd
+      description: 作业批次开始和结束
+    - type: SEQUENCE_GROUP
+      title: RecipeParameterChange
+      description: 当前程序参数或程序变更
+    - type: SEQUENCE_GROUP
+      title: RecipeDownloadToEquipment
+      description: 传输程序到设备(H->E)
+    - type: SEQUENCE_GROUP
+      title: RecipeUploadFromHostReq
+      description: 请求设备上传程序(H->E)
+    - type: SEQUENCE_GROUP
+      title: RecipeDownloadFromEquipmentReq
+      description: 请求服务器程序下载(E->H)
+    - type: SEQUENCE_GROUP
+      title: RecipeUploadToServer
+      description: 传输程序到服务器(E->H)
+    - type: SEQUENCE_GROUP
+      title: ExceptionReporting
+      description: 异常或警告系列
+    - type: SEQUENCE_GROUP
+      title: DataCollection
+      description: 数据收集系列
+    - type: SEQUENCE_GROUP
+      title: ProcessProgramManagement
+      description: 设备程序处理(Delete, Download, PPSELECT, RunCheck, PPVerify, PPStart)
+    - type: SEQUENCE_GROUP
+      title: StripMapManagement
+      description: 料条Map管理(MapDownload, MapUpload)
+    - type: SEQUENCE_GROUP
+      title: WaferMapManagement
+      description: 晶圆Map管理(WaferMapDownload, WaferMapUpload)
+    - type: SEQUENCE_GROUP
+      title: TerminalServices
+      description: 设备终端服务系列(S10F3)
+    - type: SEQUENCE_GROUP
+      title: AbortTransaction
+      description: 设备指令取消系列(SxF0)
+    - type: SEQUENCE_GROUP
+      title: SystemErrors
+      description: 设备报错系列(S9Fx)
+

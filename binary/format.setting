@@ -1,0 +1,1012 @@
+S1F1W.
+
+
+S1F2
+<L[0]>.
+
+
+S1F2
+<L[2]
+	<A[64]  MDLN>
+	<A[64]  SOFTREV>
+>.
+
+
+S1F3W
+<L[n]
+	<U4  SVID>
+>.
+
+
+S1F4
+<L[n]
+	<VARIANT  SV>
+>.
+
+
+S1F11W
+<L[n]
+	<U4  SVID>
+>.
+
+
+S1F12
+<L[n]
+	<L[3]
+		<U4  SVID>
+		<A[30]  SVNAME>
+		<A[40]  UNITS>
+	>
+>.
+
+
+S1F13W
+<L[0]>.
+
+
+S1F13W
+<L[2]
+	<A[64]  MDLN>
+	<A[64]  SOFTREV>
+>.
+
+
+S1F14
+<L[2]
+	<B  COMMACK>
+	<L[0]>
+>.
+
+
+S1F14
+<L[2]
+	<B  COMMACK>
+	<L[2]
+		<A[64]  MDLN>
+		<A[64]  SOFTREV>
+	>
+>.
+
+
+S1F15W.
+
+
+S1F16
+<B  OFLACK>.
+
+
+S1F17W.
+
+
+S1F18
+<B  ONLACK>.
+
+
+S2F13W
+<L[n]
+	<U4  ECID>
+>.
+
+
+S2F14
+<L[n]
+	<VARIANT  ECV>
+>.
+
+
+S2F15W
+<L[n]
+	<L[2]
+		<U4  ECID>
+		<VARIANT  ECV>
+	>
+>.
+
+
+S2F16
+<B  EAC>.
+
+
+S2F17W.
+
+
+S2F18
+<A[16]  TIME>.
+
+
+S2F23W
+<L[5]
+	<VARIANT  TRID>
+	<A[6]  DSPER>
+	<VARIANT  TOTSMP>
+	<VARIANT  REPGSZ>
+	<L[n]
+		<U4  SVID>
+	>
+>.
+
+
+S2F24
+<B  TIAACK>.
+
+
+S2F25W
+<B[10]  ABS>.
+
+
+S2F26
+<B[10]  ABS>.
+
+
+S2F29W
+<L[n]
+	<U4  ECID>
+>.
+
+
+S2F30
+<L[n]
+	<L[6]
+		<U4  ECID>
+		<A[64]  ECNAME>
+		<VARIANT  ECMIN>
+		<VARIANT  ECMAX>
+		<VARIANT  ECDEF>
+		<A[64]  UNITS>
+	>
+>.
+
+
+S2F31W
+<A[16]  TIME>.
+
+
+S2F32
+<B  TIACK>.
+
+
+S2F33W
+<L[2]
+	<U4  DATAID>
+	<L[0]>
+>.
+
+
+S2F33W
+<L[2]
+	<U4  DATAID>
+	<L[n]
+		<L[2]
+			<U4  RPTID>
+			<L[n]
+				<U4  VID>
+			>
+		>
+	>
+>.
+
+
+S2F34
+<B  DRACK>.
+
+
+S2F35W
+<L[2]
+	<U4  DATAID>
+	<L[n]
+		<L[2]
+			<U4  CEID>
+			<L[n]
+				<U4  RPTID>
+			>
+		>
+	>
+>.
+
+
+S2F36
+<B  LRACK>.
+
+
+S2F37W
+<L[2]
+	<BOOLEAN  CEED>
+	<L[n]
+		<U4  CEID>
+	>
+>.
+
+
+S2F39W
+<L[2]
+	<U4  DATAID>
+	<L[n]
+		<U4  DATALENGTH>
+	>
+>.
+
+
+S2F40
+<B  GRANT>.
+
+
+S2F38
+<B  ERACK>.
+
+
+S2F41W
+<L[2]
+	<A[64]  RCMD>
+	<L[n]
+		<L[2]
+			<A[64]  CPNAME>
+			<VARIANT  CPVAL>
+		>
+	>
+>.
+
+S2F41W
+<L[4]
+	<U4  DATAID>
+	<A[64]  OBJSPEC>
+	<A[64]  RCMD>
+	<L[n]
+		<L[2]
+			<A[64]  CPNAME>
+			<VARIANT  CPVAL>
+		>
+	>
+>.
+
+
+S2F42
+<L[2]
+	<B  HACK>
+	<L[n]
+		<L[2]
+			<A[64]  CPNAME>
+			<B  CPVAL>
+		>
+	>
+>.
+
+S2F42
+<L[0]>.
+
+
+S2F42
+<L[2]
+	<B  HCACK>
+	<L[n]
+		<L[2]
+			<A[40]  CPNAME>
+			<B  CPACK>
+		>
+	>
+>.
+
+
+S2F43W
+<L[n]
+	<L[2]
+		<U1  STRID>
+		<L[n]
+			<U1  FCNID>
+		>
+	>
+>.
+
+
+S2F44
+<L[2]
+	<B  RSPACK>
+	<L[n]
+		<L[3]
+			<U1  STRID>
+			<B  STRACK>
+			<L[n]
+				<U1  FCNID>
+			>
+		>
+	>
+>.
+
+
+S2F45W
+<L[2]
+	<U4  DATAID>
+	<L[n]
+		<L[2]
+			<U4  VID>
+			<L[n]
+				<L[2]
+					<B  LIMITID>
+					<L[n]
+						<VARIANT  DEADBAND>
+					>
+				>
+			>
+		>
+	>
+>.
+
+
+S2F46
+<L[2]
+	<B  VLAACK>
+	<L[n]
+		<L[3]
+			<U4  VID>
+			<B  LVACK>
+			<L[0]>
+		>
+	>
+>.
+
+
+S2F46
+<L[2]
+	<B  VLAACK>
+	<L[n]
+		<L[3]
+			<U4  VID>
+			<B  LVACK>
+			<L[2]
+				<B  LIMITID>
+				<B  LIMITACK>
+			>
+		>
+	>
+>.
+
+
+S2F47W
+<L[n]
+	<U4  VID>
+>.
+
+
+S2F48
+<L[n]
+	<L[2]
+		<U4  VID>
+		<L[0]>
+	>
+>.
+
+
+S2F48
+<L[n]
+	<L[2]
+		<U4  VID>
+		<L[4]
+			<A[40]  UNITS>
+			<VARIANT  LIMITMIN>
+			<VARIANT  LIMITMAX>
+			<L[n]
+				<L[3]
+					<B  LIMITID>
+					<VARIANT  UPPERDB>
+					<VARIANT  LOWERDB>
+				>
+			>
+		>
+	>
+>.
+
+
+S2F49W
+<L[4]
+	<U4  DATAID>
+	<A[64]  OBJSPEC>
+	<A[64]  RCMD>
+	<L[n]
+		<L[2]
+			<A[64]  CPNAME>
+			<L[n]
+				<L[2]
+					<A[64]  CPNAME>
+					<VARIANT  CPVAL>
+				>
+			>
+		>
+	>
+>.
+
+
+S2F49W
+<L[4]
+	<U4  DATAID>
+	<A[64]  OBJSPEC>
+	<A[64]  RCMD>
+	<L[n]
+		<L[2]
+			<A[64]  CPNAME>
+			<VARIANT  CPVAL>
+		>
+	>
+>.
+
+
+S2F50
+<L[0]>.
+
+
+S2F50
+<L[2]
+	<B  HCACK>
+	<L[n]
+		<L[2]
+			<A[40]  CEPNAME>
+			<B  CEPACK>
+		>
+	>
+>.
+
+
+S3F17W
+<L[5]
+	<U4  DATAID>
+	<A[40]  CARRIERACTION>
+	<A[40]  CARRIERID>
+	<B  PTN>
+	<L[n]
+		<L[2]
+			<VARIANT  CATTRID>
+			<VARIANT  CATTRDATA>
+		>
+	>
+>.
+
+
+S3F18
+<L[2]
+	<U1  CAACK>
+	<L[n]
+		<L[2]
+			<U1  ERRCODE>
+			<A[80]  ERRTEXT>
+		>
+	>
+>.
+
+
+S3F101W (LOT INFO SEND)
+<L[n]
+	<L[2]
+		<A[64]  VNAME>
+		<A[64]  VVAL>
+	>
+>.
+
+
+S3F102 (LOT INFO SEND ACK)
+<B  LIACK>.
+
+
+S5F1W
+<L[3]
+	<B  ALCD>
+	<U4  ALID>
+	<A[128]  ALTX>
+>.
+
+
+S5F2
+<B  ACKC5>.
+
+
+S5F3W
+<L[2]
+	<B  ALED>
+	<U4  ALID>
+>.
+
+
+S5F4
+<B  ACKC5>.
+
+
+S5F5W
+<L[n]
+	<U4  ALID>
+>.
+
+
+S5F6
+<L[n]
+	<L[3]
+		<B  ALCD>
+		<U4  ALID>
+		<A[128]  ALTX>
+	>
+>.
+
+
+S5F7W.
+
+
+S6F1W
+<L[4]
+	<U4  TRID>
+	<VARIANT  SMPLN>
+	<A[16]  STIME>
+	<L[n]
+		<VARIANT  SV>
+	>
+>.
+
+
+S6F2
+<B  ACKC6>.
+
+
+S6F5W
+<L[2]
+	<U4  DATAID>
+	<U4  DATALENGTH>
+>.
+
+
+S6F6
+<B  GRANT6>.
+
+
+S6F11W
+<L[3]
+	<U4  DATAID>
+	<U4  CEID>
+	<L[n]
+		<L[2]
+			<U4  RPTID>
+			<L[n]
+				<VARIANT  SV>
+			>
+		>
+	>
+>.
+
+
+S6F12
+<B  ACKC6>.
+
+
+S6F13W
+<L[3]
+	<VARIANT  DATID>
+	<U4  CEID>
+	<L[5]
+		<L[0]>
+		<U4  RPTID>
+		<L[0]>
+		<U4  VID>
+		<VARIANT  V>
+	>
+>.
+
+
+S6F14
+<B  ACK>.
+
+
+S6F15W
+<U4  CEID>.
+
+
+S6F16
+<L[3]
+	<U4  DATAID>
+	<U4  CEID>
+	<L[n]
+		<L[2]
+			<U4  RPTID>
+			<L[n]
+				<VARIANT  SV>
+			>
+		>
+	>
+>.
+
+
+S6F17W
+<U4  CEID>.
+
+
+S6F18
+<L[3]
+	<U4  DATAID>
+	<U4  CEID>
+	<L[n]
+		<L[2]
+			<U4  RPTID>
+			<L[n]
+				<VARIANT  V>
+			>
+		>
+	>
+>.
+
+
+S6F19W
+<U4  RPTID>.
+
+
+S6F20
+<L[n]
+	<VARIANT  V>
+>.
+
+
+S6F21W
+<U4  RPTID>.
+
+
+S6F22
+<L[n]
+	<L[2]
+		<U4  VID>
+		<VARIANT  V>
+	>
+>.
+
+
+S6F23W
+<U1  RSDC>.
+
+
+S6F24
+<B  RSDA>.
+
+
+S7F1W
+<L[2]
+	<A[80]  PPID>
+	<VARIANT  LENGTH>
+>.
+
+
+S7F2
+<B  PPGNT>.
+
+
+S7F3W
+<L[2]
+	<A[80]  PPID>
+	<B[n]  PPBODY>
+>.
+
+
+S7F4
+<B  ACKC7>.
+
+
+S7F5W
+<A[80]  PPID>.
+
+
+S7F6
+<L[2]
+	<A[80]  PPID>
+	<B[n]  PPBODY>
+>.
+
+
+S7F17W
+<L[n]
+	<A[50]  PPID>
+>.
+
+
+S7F18
+<B  ACK7>.
+
+
+S7F19W.
+
+
+S7F20
+<L[n]
+	<A[80]  PPID>
+>.
+
+
+S7F23W
+<L[4]
+	<A[50]  PPID>
+	<A[50]  MDLN>
+	<A[50]  SOFTREV>
+	<L[n]
+		<L[2]
+			<A[50]  CCODE>
+			<L[n]
+				<A[50]  PPARM>
+			>
+		>
+	>
+>.
+
+
+S7F24
+<B  ACKC7>.
+
+
+S7F25W
+<A[50]  PPID>.
+
+
+S7F26
+<L[4]
+	<A[50]  PPID>
+	<A[50]  MLDN>
+	<A[6]  SOFTREV>
+	<L[2]
+		<A[50]  CCODE>
+		<L[n]
+			<VARIANT  PPARM>
+		>
+	>
+>.
+
+
+S7F27W
+<L[2]
+	<A[50]  PPID>
+	<L[n]
+		<L[3]
+			<S1  ACKC7A>
+			<VARIANT  SEQNUM>
+			<VARIANT  ERRW7>
+		>
+	>
+>.
+
+
+S7F28.
+
+
+S7F29W
+<U4  LENGTH>
+>.
+
+
+S7F30.
+
+
+S9F1
+<B[10]  MHEAD>.
+
+
+S9F3
+<B[10]  MHEAD>.
+
+
+S9F5
+<B[10]  MHEAD>.
+
+
+S9F7
+<B[10]  MHEAD>.
+
+
+S9F9
+<B[10]  MHEAD>.
+
+
+S9F11
+<B[10]  MHEAD>.
+
+
+S9F13
+<B[10]  MHEAD>.
+
+S9F13W
+<L[2]
+	<A[30]  MEXP>
+	<A[30]  EDID>
+>.
+
+S10F1W
+<L[2]
+	<B  TID>
+	<A[30]  TEXT>
+>.
+
+
+S10F2
+<B  ACKC10>.
+
+
+S10F3W
+<L[2]
+	<B  TID>
+	<A[1024]  TEXT>
+>.
+
+
+S10F4
+<B  ACKC10>.
+
+
+S10F5W
+<L[2]
+	<B  TID>
+	<L[n]
+		<A[30]  TEXT>
+	>
+>.
+
+
+S10F6
+<B  ACKC10>.
+
+
+S10F7
+<B  TID>.
+
+
+S12F1W
+<L[15]
+	<A  MID>
+	<B  IDTYP>
+	<U2  FNLOC>
+	<U2  FFROT>
+	<B  ORLOC>
+	<U1  RPSEL>
+	<L[n]
+		<VARIANT  REFP>
+	>
+	<A  DUTMS>
+	<U2  XDIES>
+	<U2  YDIES>
+	<U2  ROWCT>
+	<U2  COLCT>
+	<A  NULBC>
+	<U4  PRDCT>
+	<B  PRAXI>
+>.
+
+
+S12F2
+<B  SDACK>.
+
+
+S12F3W
+<L[9]
+	<A  MID>
+	<B  IDTYP>
+	<B  MAPFT>
+	<U2  FNLOC>
+	<U2  FFROT>
+	<B  ORLOC>
+	<B  PRAXI>
+	<A  BCEQU>
+	<A  NULBC>
+>.
+
+
+S12F4
+<L[15]
+	<A  MID>
+	<B  IDTYP>
+	<U2  FNLOC>
+	<B  ORLOC>
+	<U1  RPSEL>
+	<L[n]
+		<VARIANT  REFP>
+	>
+	<A  DUTMS>
+	<U2  XDIES>
+	<U2  YDIES>
+	<U2  ROWCT>
+	<U2  COLCT>
+	<U4  PRDCT>
+	<A  BCEQU>
+	<A  NULBC>
+	<U2  MLCL>
+>.
+
+
+S12F5W
+<L[4]
+	<A  MID>
+	<B  IDTYP>
+	<B  MAPFT>
+	<U2  MLCL>
+>.
+
+
+S12F6
+<B  GRNT1>.
+
+
+S12F9W
+<L[4]
+	<A  MID>
+	<B  IDTYP>
+	<U2  STRPXY>
+	<A  BINLT >
+>.
+
+
+S12F10
+<B  MDACK>.
+
+
+S12F15W
+<L[2]
+	<A  MID>
+	<B  IDTYP>
+>.
+
+
+S12F16
+<L[4]
+	<A  MID>
+	<B  IDTYP>
+	<U2  STRPXY>
+	<A  BINLT >
+>.
+
+
+S12F19
+<L[2]
+	<B  MAPER>
+	<U1  DATLC>
+>.
+
+
+S14F1W
+<L[5]
+	<A  OBJSPEC>
+	<A  OBJTYPE>
+	<L[1]
+		<A  OBJID>
+	>
+	<L[1]
+		<L[3]
+			<A  ATTRID>
+			<A  ATTRDATA>
+			<U1  ATTRRELN>
+		>
+	>
+	<L[1]
+		<A  PPID>
+	>
+>.
+
+
+S14F1W
+<L[4]
+	<A  OBJSPEC>
+	<A  OBJTYPE>
+	<L[1]
+		<A  OBJID>
+	>
+	<L[1]
+		<L[3]
+			<A  ATTRID>
+			<A  ATTRDATA>
+			<U1  ATTRRELN>
+		>
+	>
+>.
+
+
+S14F2
+<L[2]
+	<L[1]
+		<L[2]
+			<A[14]  OBJID>
+			<L[1]
+				<L[2]
+					<A[7]  ATTRID>
+					<A[1000]  MAPDATA>
+				>
+			>
+		>
+	>
+	<L[2]
+		<B[1]  OBJACK>
+		<L[0]>
+	>
+>.

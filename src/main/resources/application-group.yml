@@ -4,6 +4,9 @@ groups:
       title: GemIntialize
       description: 联机初始化
     - type: SEQUENCE_GROUP
+      title: ProgramManagementAndProcess
+      description: 程序管理和作业
+    - type: SEQUENCE_GROUP
       title: ControlStatusChange
       description: 控制状态变更
     - type: SEQUENCE_GROUP
@@ -16,23 +19,17 @@ groups:
       title: RecipeParameterChange
       description: 当前程序参数或程序变更
     - type: SEQUENCE_GROUP
-      title: RecipeDownAndLoad
-      description: 程序下载和加载
+      title: RecipeDownloadToEquipment
+      description: 传输程序到设备(H->E)
     - type: SEQUENCE_GROUP
       title: RecipeUploadFromHostReq
-      description: 请求设备上传程序
+      description: 请求设备上传程序(H->E)
     - type: SEQUENCE_GROUP
-      title: RecipeDownloadToEquipment
-      description: 传输程序到设备
+      title: RecipeDownloadFromEquipmentReq
+      description: 请求服务器程序下载(E->H)
     - type: SEQUENCE_GROUP
       title: RecipeUploadToServer
-      description: 读取设备程序到服务器
-    - type: SEQUENCE_GROUP
-      title: EquipmentStatus
-      description: 设备状态系列
-    - type: SEQUENCE_GROUP
-      title: TerminalRemoteCommand
-      description: 设备远程指令系列
+      description: 传输程序到服务器(E->H)
     - type: SEQUENCE_GROUP
       title: ExceptionReporting
       description: 异常或警告系列
@@ -41,14 +38,20 @@ groups:
       description: 数据收集系列
     - type: SEQUENCE_GROUP
       title: ProcessProgramManagement
-      description: 设备程序管理系列
+      description: 设备程序处理(Delete, Download, PPSELECT, RunCheck, PPVerify, PPStart)
     - type: SEQUENCE_GROUP
-      title: SystemErrors
-      description: 设备报错系列
+      title: StripMapManagement
+      description: 料条Map管理(MapDownload, MapUpload)
+    - type: SEQUENCE_GROUP
+      title: WaferMapManagement
+      description: 晶圆Map管理(WaferMapDownload, WaferMapUpload)
     - type: SEQUENCE_GROUP
       title: TerminalServices
-      description: 设备终端服务系列
+      description: 设备终端服务系列(S10F3)
     - type: SEQUENCE_GROUP
       title: AbortTransaction
-      description: 设备指令取消系列
+      description: 设备指令取消系列(SxF0)
+    - type: SEQUENCE_GROUP
+      title: SystemErrors
+      description: 设备报错系列(S9Fx)
 

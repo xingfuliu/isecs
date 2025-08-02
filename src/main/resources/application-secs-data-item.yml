@@ -1,0 +1,294 @@
+secs:
+  data:
+    items:
+      - name: ABS
+        format: B
+        description: S2F25,F26
+      - name: ACKC10
+        format: B
+        description: S10F2,F4,F6
+      - name: ACKC5
+        format: B
+        description: S5F2,F4
+      - name: ACKC6
+        format: B
+        description: S6F2,F12
+      - name: ACKC7
+        format: B
+        description: S7F24
+      - name: ACKC7A
+        format: U1
+        description: S7F27
+      - name: ALCD
+        format: B
+        description: S5F1,F6
+      - name: ALED
+        format: B
+        description: S5F3
+      - name: ALID
+        format: U2
+        description: S5F1,F3,F5,F6
+      - name: ALTX
+        format: A
+        description: S5F1,F6
+      - name: CCODE
+        format: U2
+        description: S7F23
+      - name: CEED
+        format: BOOLEAN
+        description: S2F37
+      - name: CEID
+        format: U2
+        description: S2F35,F37,S6F11,F15
+      - name: COMMACK
+        format: B
+        description: S1F14
+      - name: CPACK
+        format: B
+        description:
+      - name: CPNAME
+        format: A
+        description: S2F41,F42,F49,F50
+      - name: CPVAL
+        format: A
+        description: S2F41,F49
+      - name: DATAID
+        format: U2
+        description: S2F33,F35,F39,F45,F49,S6F5,F11,F16
+      - name: DATALENGTH
+        format: U4
+        description: S2F39,S6F5
+      - name: DRACK
+        format: B
+        description: S2F34
+      - name: DSPER
+        format: A
+        description: S2F23
+      - name: EAC
+        format: A
+        description: S2F16
+      - name: ECDEF
+        format: A
+        description: S2F30
+      - name: ECID
+        format: U2
+        description: S2F13,F15,F29,F30
+      - name: ECMAX
+        format: A
+        description: S2F30
+      - name: ECMIN
+        format: A
+        description: S2F30
+      - name: ECNAME
+        format: A
+        description: S2F30
+      - name: ECV
+        format: A
+        description: S2F14,F15
+      - name: EDID
+        format: A
+        description: S9F13
+      - name: ERACK
+        format: B
+        description: S2F38
+      - name: ERRW7
+        format: A
+        description: S7F27
+      - name: FCNID
+        format: U1
+        description: S2F43,F44
+      - name: GRANT
+        format: B
+        description: S2F40
+      - name: GRANT6
+        format: B
+        description: S6F6
+      - name: HCACK
+        format: B
+        description: S2F31,F33
+      - name: LENGTH
+        format: U4
+        description: S7F1,F29
+      - name: LIMITACK
+        format: B
+        description: S2F46
+      - name: LIMITID
+        format: B
+        description: S2F45,F46,F48
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
+#      - name: ALTX
+#        format: A
+#        description: S5F1,F6
