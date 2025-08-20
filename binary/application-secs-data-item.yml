@@ -118,9 +118,15 @@ secs:
       - name: MID
         format: A
         description: S12F1,F3,F4,F5,F9,F15
-#      - name: ALTX
-#        format: A
-#        description: S5F1,F6
+      - name: RPTID
+        format: U4
+        description: S2F33,F5,S6F11
+      - name: SVID
+        format: U4
+        description: S1F3
+      - name: VID
+        format: U4
+        description: S2F33
 #      - name: ALTX
 #        format: A
 #        description: S5F1,F6
